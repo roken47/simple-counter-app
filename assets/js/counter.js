@@ -9,13 +9,14 @@ counter.innerHTML = count;
 decrement.addEventListener("click", function () {
   count--;
   counter.innerHTML = count;
+  counter.style.color = "black";
 });
 
 increment.addEventListener("click", function () {
   count++;
   counter.innerHTML = count;
   counter.style.color = "black";
-  if (count === 15) {
-    counter.getElementsByClassName.color = "blue";
+  if (count >= 10) {
+    counter.style.color = "red";
   }
 });
